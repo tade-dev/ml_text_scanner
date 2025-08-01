@@ -596,7 +596,6 @@ class _LiveCameraScannerState extends State<LiveCameraScanner>
                     // Scanning Overlay
                     _buildScanningOverlay(),
                     
-                    // Text Results
                     _buildTextResults(),
                   ],
                 ),
