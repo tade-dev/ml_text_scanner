@@ -151,9 +151,9 @@ class _LiveCameraScannerState extends State<LiveCameraScanner>
 
   InputImageFormat _getImageFormat(CameraImage image) {
     switch (image.format.raw) {
-      case 35: // kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange
+      case 35:
         return InputImageFormat.yuv420;
-      case 17: // kCVPixelFormatType_420YpCbCr8BiPlanarFullRange  
+      case 17: 
         return InputImageFormat.nv21;
       default:
         return InputImageFormat.yuv420;
@@ -163,7 +163,6 @@ class _LiveCameraScannerState extends State<LiveCameraScanner>
   Widget _buildScanningOverlay() {
     return Stack(
       children: [
-        // Corner brackets
         Positioned(
           top: 100,
           left: 50,
@@ -175,7 +174,6 @@ class _LiveCameraScannerState extends State<LiveCameraScanner>
             ),
             child: Stack(
               children: [
-                // Top-left corner
                 Positioned(
                   top: 0,
                   left: 0,
